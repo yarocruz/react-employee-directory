@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from "./components/Layout";
 import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Layout>
           <h1 className="font-black text-lg text-gray-800 mt-16">Employee Directory</h1>
           <p>Search for an employee or arrange by category.</p>
+
+          <Navigation />
 
           <header>
               <p className="text-6xl">Hello from React bitches!</p>
