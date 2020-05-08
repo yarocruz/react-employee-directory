@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "image": "https://randomuser.me/api/portraits/women/90.jpg",
+    "name": "Lisa Simpson",
+    "department": "Sales",
+    "email": "lissimp@email.com",
+    "phone": "555-321-2345"
+  },
+  {
+    "id": 2,
+    "image": "https://randomuser.me/api/portraits/men/90.jpg",
+    "name": "Troy McGibbons",
+    "department": "Engineering",
+    "email": "troydog@email.com",
+    "phone": "555-012-3456"
+  },
+  {
+    "id": 3,
+    "image": "https://randomuser.me/api/portraits/women/77.jpg",
+    "name": "Sandra Lopez",
+    "department": "Design",
+    "email": "salola@email.com",
+    "phone": "555-456-7890"
+  },
+  {
+    "id": 4,
+    "image": "https://randomuser.me/api/portraits/men/35.jpg",
+    "name": "Tyler Durden",
+    "department": "Logistics",
+    "email": "projectmayhem@email.com",
+    "phone": "555-654-9876"
+  },
+  {
+    "id": 5,
+    "image": "https://randomuser.me/api/portraits/women/51.jpg",
+    "name": "Kristen Stewart",
+    "department": "Marketing",
+    "email": "kikip@email.com",
+    "phone": "555-987-9876"
+  },
+  {
+    "id": 6,
+    "image": "https://randomuser.me/api/portraits/men/48.jpg",
+    "name": "Ray Romano",
+    "department": "Management",
+    "email": "royro@email.com",
+    "phone": "555-435-6748"
+  },
+  {
+    "id": 7,
+    "image": "https://randomuser.me/api/portraits/women/66.jpg",
+    "name": "Brenda Walsh",
+    "department": "Logistics",
+    "email": "90210@email.com",
+    "phone": "555-666-7766"
+  },
+  {
+    "id": 8,
+    "image": "https://randomuser.me/api/portraits/men/25.jpg",
+    "name": "Booth Horvath",
+    "department": "Marketing",
+    "email": "booboo@email.com",
+    "phone": "555-223-4334"
+  },
+  {
+    "id": 9,
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "name": "Jessa Robinson",
+    "department": "Sales",
+    "email": "jezebelish@email.com",
+    "phone": "555-451-9974"
+  },
+  {
+    "id": 10,
+    "image": "https://randomuser.me/api/portraits/men/99.jpg",
+    "name": "Ira Glass",
+    "department": "Engineering",
+    "email": "tal@email.com",
+    "phone": "555-111-3322"
+  }
+]

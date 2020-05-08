@@ -1,26 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Layout from "./components/Layout";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import EmployeeCard from "./components/EmployeeCard";
+import EmployeeCardList from "./components/EmployeeCardList";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Layout>
+class App extends Component {
 
-          <h1 className="font-black text-lg text-gray-800 mt-16">Employee Directory</h1>
+    render() {
+        return (
+            <div>
+                <Header />
+                <Layout>
 
-          <p>Search for an employee or arrange by category.</p>
+                    <h1 className="font-black text-lg text-gray-800 mt-16">Employee Directory</h1>
 
-          <Navigation />
+                    <p>Search for an employee or arrange by category.</p>
 
-          <EmployeeCard />
+                    <Navigation />
 
-      </Layout>
-    </div>
-  );
+                    <EmployeeCardList />
+
+                </Layout>
+            </div>
+        );
+    }
 }
 
 export default App;
