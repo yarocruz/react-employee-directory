@@ -1,28 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import EmployeeCard from "./EmployeeCard";
-import employees from "../data/employees.json";
 
-class EmployeeCardList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            employees,
-        }
-    }
-    render() {
-        return (
-            this.state.employees.map(employee => (
-                <EmployeeCard
-                    key={employee.id}
-                    image={employee.image}
-                    name={employee.name}
-                    dept={employee.department}
-                    email={employee.email}
-                    phone={employee.phone}
-                />
+
+function EmployeeCardList ({ data }) { // another fancy destructuring to avoid typing props.data.map down below
+    return (
+        data.map(employee => (
+            <EmployeeCard
+                key={employee.id}
+                image={employee.image}
+                name={employee.name}
+                dept={employee.department}
+                email={employee.email}
+                phone={employee.phone}
+            />
             ))
-        )
-    }
+    )
 }
 
 export default EmployeeCardList;
