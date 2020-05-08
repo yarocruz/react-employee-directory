@@ -13,7 +13,7 @@ class App extends Component {
                 <Header />
                 <Layout>
 
-                    <h1 className="font-black text-4xl text-gray-800 mt-16">Employee Directory</h1>
+                    <h1 className="title text-5xl text-gray-800 mt-16">Employee Directory</h1>
 
                     <p>Search for an employee or arrange by category.</p>
 
