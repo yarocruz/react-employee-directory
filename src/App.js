@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import EmployeeCardList from "./components/EmployeeCardList";
+import Footer from "./components/Footer";
 
 class App extends Component {
 
@@ -12,7 +13,7 @@ class App extends Component {
                 <Header />
                 <Layout>
 
-                    <h1 className="font-black text-lg text-gray-800 mt-16">Employee Directory</h1>
+                    <h1 className="font-black text-4xl text-gray-800 mt-16">Employee Directory</h1>
 
                     <p>Search for an employee or arrange by category.</p>
 
@@ -20,6 +21,7 @@ class App extends Component {
 
                     <EmployeeCardList />
 
+                    <Footer />
                 </Layout>
             </div>
         );
