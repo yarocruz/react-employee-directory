@@ -78,5 +78,149 @@
     "department": "Engineering",
     "email": "tal@email.com",
     "phone": "555-111-3322"
+  },
+  {
+    "id": 11,
+    "image": "https://randomuser.me/api/portraits/women/87.jpg",
+    "name": "Andrea Russo",
+    "department": "Admin",
+    "email": "russ@email.com",
+    "phone": "555-110-1110"
+  },
+  {
+    "id": 12,
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "name": "Charles Barkley",
+    "department": "Design",
+    "email": "charles@email.com",
+    "phone": "555-001-0001"
+  },
+  {
+    "id": 13,
+    "image": "https://randomuser.me/api/portraits/women/39.jpg",
+    "name": "Diana Cheddar",
+    "department": "Engineering",
+    "email": "didi@email.com",
+    "phone": "555-200-0002"
+  },
+  {
+    "id": 14,
+    "image": "https://randomuser.me/api/portraits/men/12.jpg",
+    "name": "Emerson Downing",
+    "department": "Engineering",
+    "email": "eme@email.com",
+    "phone": "555-201-1002"
+  },
+  {
+    "id": 15,
+    "image": "https://randomuser.me/api/portraits/women/12.jpg",
+    "name": "Frances Robinson",
+    "department": "Management",
+    "email": "fran@email.com",
+    "phone": "555-300-1003"
+  },
+  {
+    "id": 16,
+    "image": "https://randomuser.me/api/portraits/men/23.jpg",
+    "name": "Gabriel Rodriguez",
+    "department": "Sales",
+    "email": "gabbagabba@email.com",
+    "phone": "555-301-1020"
+  },
+  {
+    "id": 17,
+    "image": "https://randomuser.me/api/portraits/women/23.jpg",
+    "name": "Hannah Montana",
+    "department": "Design",
+    "email": "bananarama@email.com",
+    "phone": "555-333-1020"
+  },
+  {
+    "id": 18,
+    "image": "https://randomuser.me/api/portraits/men/44.jpg",
+    "name": "Michael Scott",
+    "department": "Management",
+    "email": "thatswhatshesaid@email.com",
+    "phone": "555-633-1020"
+  },
+  {
+    "id": 19,
+    "image": "https://randomuser.me/api/portraits/women/42.jpg",
+    "name": "Nancy Fey",
+    "department": "Marketing",
+    "email": "nanana@email.com",
+    "phone": "555-777-1020"
+  },
+  {
+    "id": 20,
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "name": "Oscar Schindler",
+    "department": "Management",
+    "email": "oscar@email.com",
+    "phone": "555-777-7000"
+  },
+  {
+    "id": 21,
+    "image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "name": "Petula Morrison",
+    "department": "Design",
+    "email": "petulia@email.com",
+    "phone": "555-666-7000"
+  },
+  {
+    "id": 22,
+    "image": "https://randomuser.me/api/portraits/men/91.jpg",
+    "name": "Quinn Sanders",
+    "department": "Sales",
+    "email": "quinnylover@email.com",
+    "phone": "555-666-8888"
+  },
+  {
+    "id": 23,
+    "image": "https://randomuser.me/api/portraits/women/91.jpg",
+    "name": "Ursula Peterson",
+    "department": "Engineering",
+    "email": "ur@email.com",
+    "phone": "555-123-8888"
+  },
+  {
+    "id": 24,
+    "image": "https://randomuser.me/api/portraits/men/75.jpg",
+    "name": "Victor Hugo",
+    "department": "Design",
+    "email": "hugs@email.com",
+    "phone": "555-666-1234"
+  },
+  {
+    "id": 25,
+    "image": "https://randomuser.me/api/portraits/women/75.jpg",
+    "name": "Wanda Sikes",
+    "department": "Marketing",
+    "email": "sike@email.com",
+    "phone": "555-678-4000"
+  },
+  {
+    "id": 26,
+    "image": "https://randomuser.me/api/portraits/men/32.jpg",
+    "name": "Xavier Burns",
+    "department": "Engineering",
+    "email": "xman@email.com",
+    "phone": "555-321-3456"
+  },
+  {
+    "id": 27,
+    "image": "https://randomuser.me/api/portraits/women/54.jpg",
+    "name": "Yolanda Rivera",
+    "department": "Sales",
+    "email": "yolo@email.com",
+    "phone": "555-765-1234"
+  },
+  {
+    "id": 28,
+    "image": "https://randomuser.me/api/portraits/men/54.jpg",
+    "name": "Zach Morris",
+    "department": "Sales",
+    "email": "zakattack@email.com",
+    "phone": "555-800-8877"
   }
 ]

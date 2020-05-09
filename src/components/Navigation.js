@@ -4,8 +4,8 @@ function Navigation({ onSearch, searchTerm, handleSortByName, handleSortByDept }
     return (
         <div className="md:flex justify-between my-6">
             <div className="md:mb-0 mb-4">
-                <button onClick={handleSortByName} className="bg-white shadow text-gray-800 rounded px-8 py-1 mr-4 hover:bg-yellow-400 hover:text-white">Name</button>
-                <button onClick={handleSortByDept} className="bg-white shadow text-gray-800 rounded px-8 py-1 hover:bg-yellow-400 hover:text-white">Dept</button>
+                <button onClick={handleSortByName} className="bg-white focus:bg-yellow-500 focus:text-white focus:outline-none shadow font-bold text-gray-800 rounded px-8 py-1 mr-4 hover:bg-yellow-500 hover:text-white">Name</button>
+                <button onClick={handleSortByDept} className="bg-white focus:bg-yellow-500 focus:text-white focus:outline-none shadow font-bold text-gray-800 rounded px-8 py-1 hover:bg-yellow-500 hover:text-white">Dept</button>
             </div>
             <form>
                 <input
