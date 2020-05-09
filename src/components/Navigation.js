@@ -1,11 +1,11 @@
 import React from "react";
 
-function Navigation({ onSearch, searchTerm }) { // The two props coming down from the Navigation Component
+function Navigation({ onSearch, searchTerm, handleSortByName, handleSortByDept }) { // The two props coming down from the Navigation Component
     return (
         <div className="md:flex justify-between my-6">
             <div className="md:mb-0 mb-4">
-                <button className="bg-white shadow text-gray-800 rounded px-8 py-1 mr-4">Name</button>
-                <button className="bg-white shadow text-gray-800 rounded px-8 py-1">Dept</button>
+                <button onClick={handleSortByName} className="bg-white shadow text-gray-800 rounded px-8 py-1 mr-4 hover:bg-yellow-400 hover:text-white">Name</button>
+                <button onClick={handleSortByDept} className="bg-white shadow text-gray-800 rounded px-8 py-1 hover:bg-yellow-400 hover:text-white">Dept</button>
             </div>
             <form>
                 <input
