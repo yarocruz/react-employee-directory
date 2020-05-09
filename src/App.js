@@ -22,6 +22,9 @@ class App extends Component {
     render() {
         // the filteredEmployees variable only stores employee names that start with with the matching string you type
         const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm));
+        // sort array ascending alphabetical
+        const sortedEmployees = this.state.employees.sort((a,b) => (a.name > b.name) ? 1 : -1);
+        console.log(sortedEmployees);
         return (
             <div>
                 <Header />
@@ -29,7 +32,7 @@ class App extends Component {
                     <h1 className="title text-5xl text-gray-800 mt-16">Employee Directory</h1>
                     <p>Search for an employee or arrange by category.</p>
                     {/*the handleSearchTerm method and searchTerm state get passed down to the Navigation component via props with the onSearch and searchTerm props*/}
-                    <Navigation onSearch={this.handleSearchTerm } searchTerm={this.state.searchTerm} />
+                    <Navigation onSearch={this.handleSearchTerm} searchTerm={this.state.searchTerm} />
                     {/* the employees array gets the filteredEmployees data via the data prop */}
                     <EmployeeCardList data={filteredEmployees} />
                     <Footer />
