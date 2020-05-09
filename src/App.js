@@ -22,34 +22,45 @@ class App extends Component {
 
     handleSortByName = (event) => {
         event.preventDefault();
-        // sort array ascending alphabetical
-        const sortedEmployees = this.state.employees.sort((a,b) => (a.name > b.name) ? 1 : -1);
-
-        this.setState({
-            employees: sortedEmployees
-        })
+        // sort array ascending or descending by first name
+        if (!this.state.sorted) {
+            this.setState({
+                employees: this.state.employees.sort((a,b) => (a.name > b.name) ? 1 : -1),
+                sorted: true
+            })
+        } else {
+            this.setState({
+                employees: this.state.employees.sort((a,b) => (a.name > b.name) ? -1 : 1),
+                sorted: false
+            })
+        }
     }
 
     handleSortByDept = (event) => {
         event.preventDefault();
-        // sort array ascending alphabetical
-        const sortedEmployees = this.state.employees.sort((a,b) => (a.department > b.department) ? 1 : -1);
-
-        this.setState({
-            employees: sortedEmployees
-        })
+        // sort array ascending or descending by dept name
+        if (!this.state.sorted) {
+            this.setState({
+                employees: this.state.employees.sort((a,b) => (a.department > b.department) ? 1 : -1),
+                sorted: true
+            })
+        } else {
+            this.setState({
+                employees: this.state.employees.sort((a,b) => (a.department > b.department) ? -1 : 1),
+                sorted: false
+            })
+        }
     }
 
     render() {
         // the filteredEmployees variable only stores employee names that start with with the matching string you type
         const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm));
-        console.log(this.state.searchTerm);
         return (
             <div>
                 <Header />
                 <Layout>
                     <h1 className="title text-5xl text-gray-800 mt-16">Employee Directory</h1>
-                    <p>Search for an employee or arrange by category.</p>
+                    <p className="mb-16 text-md">Search for an employee or sort by Name or Category.</p>
                     {/*the handleSearchTerm method and searchTerm state get passed down to the Navigation component via props with the onSearch and searchTerm props*/}
                     <Navigation
                         onSearch={this.handleSearchTerm}
