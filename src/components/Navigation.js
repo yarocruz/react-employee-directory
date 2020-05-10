@@ -11,7 +11,7 @@ function Navigation({ onSearch, searchTerm, handleSortByName, handleSortByDept }
                 <input
                     value={searchTerm} // value attribute here keeps what you type in sync
                     onChange={onSearch} // the onChange is the event listening attribute that uses the onSearch prop method let state know there was a change
-                    className="shadow pl-5 rounded"
+                    className="shadow pl-5 rounded w-full py-1"
                     type="text"
                     placeholder="search employee"/>
             </form>

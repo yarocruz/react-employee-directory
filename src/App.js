@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Layout from "./components/Layout";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
@@ -15,7 +15,7 @@ class App extends Component {
 
     handleSearchTerm = (event) => {
         event.preventDefault();
-        this.setState( {
+        this.setState({
             searchTerm: event.target.value,
         })
     }
@@ -25,12 +25,12 @@ class App extends Component {
         // sort array ascending or descending by first name
         if (!this.state.sorted) {
             this.setState({
-                employees: this.state.employees.sort((a,b) => (a.name > b.name) ? 1 : -1),
+                employees: this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1),
                 sorted: true
             })
         } else {
             this.setState({
-                employees: this.state.employees.sort((a,b) => (a.name > b.name) ? -1 : 1),
+                employees: this.state.employees.sort((a, b) => (a.name > b.name) ? -1 : 1),
                 sorted: false
             })
         }
@@ -41,12 +41,12 @@ class App extends Component {
         // sort array ascending or descending by dept name
         if (!this.state.sorted) {
             this.setState({
-                employees: this.state.employees.sort((a,b) => (a.department > b.department) ? 1 : -1),
+                employees: this.state.employees.sort((a, b) => (a.department > b.department) ? 1 : -1),
                 sorted: true
             })
         } else {
             this.setState({
-                employees: this.state.employees.sort((a,b) => (a.department > b.department) ? -1 : 1),
+                employees: this.state.employees.sort((a, b) => (a.department > b.department) ? -1 : 1),
                 sorted: false
             })
         }
@@ -57,7 +57,7 @@ class App extends Component {
         const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm));
         return (
             <div>
-                <Header />
+                <Header/>
                 <Layout>
                     <h1 className="title text-5xl text-gray-800 mt-16">Employee Directory</h1>
                     <p className="mb-16 text-md">Search for an employee or sort by Name or Category.</p>
@@ -69,8 +69,8 @@ class App extends Component {
                         handleSortByDept={this.handleSortByDept}
                     />
                     {/* the employees array gets the filteredEmployees data via the data prop */}
-                    <EmployeeCardList data={filteredEmployees} />
-                    <Footer />
+                    <EmployeeCardList data={filteredEmployees}/>
+                    <Footer/>
                 </Layout>
             </div>
         );
