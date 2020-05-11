@@ -4,13 +4,27 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import EmployeeCardList from "./components/EmployeeCardList";
 import Footer from "./components/Footer";
-import employees from "./data/employees.json";
+//import employees from "./data/employees.json";
+import API from "./utils/API";
 
 class App extends Component {
     state = {
         searchTerm: '',
         sorted: false,
-        employees,
+        employees: []
+    }
+
+    componentDidMount() {
+        this.fetchUsers()
+    }
+
+    fetchUsers = () => {
+        API.getUsers()
+            .then(response => {
+                console.log(response.data.results)
+                this.setState({ employees: response.data.results })
+            })
+            .catch(err => console.log(err))
     }
 
     handleSearchTerm = (event) => {
@@ -25,36 +39,36 @@ class App extends Component {
         // sort array ascending or descending by first name
         if (!this.state.sorted) {
             this.setState({
-                employees: this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1),
+                employees: this.state.employees.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1),
                 sorted: true
             })
         } else {
             this.setState({
-                employees: this.state.employees.sort((a, b) => (a.name > b.name) ? -1 : 1),
+                employees: this.state.employees.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1),
                 sorted: false
             })
         }
     }
 
-    handleSortByDept = (event) => {
-        event.preventDefault();
-        // sort array ascending or descending by dept name
-        if (!this.state.sorted) {
-            this.setState({
-                employees: this.state.employees.sort((a, b) => (a.department > b.department) ? 1 : -1),
-                sorted: true
-            })
-        } else {
-            this.setState({
-                employees: this.state.employees.sort((a, b) => (a.department > b.department) ? -1 : 1),
-                sorted: false
-            })
-        }
-    }
+    // handleSortByDept = (event) => {
+    //     event.preventDefault();
+    //     // sort array ascending or descending by dept name
+    //     if (!this.state.sorted) {
+    //         this.setState({
+    //             employees: this.state.employees.sort((a, b) => (a.department > b.department) ? 1 : -1),
+    //             sorted: true
+    //         })
+    //     } else {
+    //         this.setState({
+    //             employees: this.state.employees.sort((a, b) => (a.department > b.department) ? -1 : 1),
+    //             sorted: false
+    //         })
+    //     }
+    // }
 
     render() {
         // the filteredEmployees variable only stores employee names that start with with the matching string you type
-        const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm));
+        const filteredEmployees = this.state.employees.filter(employee => employee.name.first.toLowerCase().startsWith(this.state.searchTerm));
         return (
             <div>
                 <Header/>

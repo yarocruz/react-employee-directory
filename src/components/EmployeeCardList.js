@@ -6,10 +6,10 @@ function EmployeeCardList ({ data }) { // another fancy destructuring to avoid t
     return (
         data.map(employee => (
             <EmployeeCard
-                key={employee.id}
-                image={employee.image}
-                name={employee.name}
-                dept={employee.department}
+                key={employee.cell}
+                image={employee.picture.medium}
+                firstName={employee.name.first}
+                surName={employee.name.last}
                 email={employee.email}
                 phone={employee.phone}
             />
