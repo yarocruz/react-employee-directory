@@ -54,7 +54,7 @@ class App extends Component {
 
     render() {
         // the filteredEmployees variable only stores employee names that start with with the matching string you type
-        const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm));
+        const filteredEmployees = this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm.toLowerCase()));
         return (
             <div>
                 <Header/>
