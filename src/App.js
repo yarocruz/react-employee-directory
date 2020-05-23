@@ -12,12 +12,10 @@ function App() {
     const [ data, setEmployees ] = useState(employees);
 
     function handleSearchTerm(event)  {
-        event.preventDefault();
         setSearchTerm(event.target.value)
     }
 
-    function handleSortByName(event) {
-        event.preventDefault();
+    function handleSortByName() {
         // sort array ascending or descending by first name
         if (!sorted) {
             setEmployees(data.sort((a, b) => (a.name > b.name) ? 1 : -1));
@@ -28,14 +26,13 @@ function App() {
         }
     }
 
-    function handleSortByDept(event) {
-        event.preventDefault();
+    function handleSortByDept() {
         // sort array ascending or descending by dept name
         if (!sorted) {
             setEmployees(data.sort((a, b) => (a.department > b.department) ? 1 : -1));
             setSorted(true);
         } else {
-            setEmployees(data.sort((a, b) => (a.department > b.department) ? -11 : 1));
+            setEmployees(data.sort((a, b) => (a.department > b.department) ? -1 : 1));
             setSorted(false);
         }
     }
