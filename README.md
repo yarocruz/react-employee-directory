@@ -1,6 +1,8 @@
+
+
 # Employee Directory
  #### [Demo](https://yarocruz.github.io/react-employee-directory/)
-![Budget Tracker Screenshot](employee-directory.png)
+![Employee Directory Screenshot](employee-directory.png)
 
 ## Description
 
@@ -8,6 +10,7 @@ This a [React](https://reactjs.org/) app that lets you view a list of employees,
 and sort the employee by either name or department. When you search for an employee it will immediately give you a 
 result and clicking on the buttons will sort the employees either in ascending or descending order.
       
+
 
 ## Technologies
 
